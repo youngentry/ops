@@ -21,13 +21,15 @@
  */
 
 /* 
-.main_visual;;
+.MainVisual;;
  */
-.main_visual {
+.MainVisual {
   background: #ddd;
 }
+.mainSlider {
+}
 /* 
-.main_visual;;
+.MainVisual;;
  */
 
 /* 
