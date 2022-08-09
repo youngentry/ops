@@ -50,24 +50,13 @@ html {
 .mainSlider .slide {
   display: flex;
 }
-.mainSlider .slide .left {
-  flex: 1;
-}
+.mainSlider .slide .left,
 .mainSlider .slide .right {
   flex: 1;
 }
-.mainSlider figure {
-  position: relative;
-}
-.mainSlider p {
-  position: absolute;
-  top: 30%;
-  left: 30%;
-  font-size: 4rem;
-}
-.mainSlider img {
-  width: 120rem;
-  margin: 0 0 0 auto;
+.mainSlider .left {
+  padding: 100px 0;
+  text-align: center;
 }
 .mainSlider .slick-arrow {
   position: absolute;
@@ -79,22 +68,6 @@ html {
   border: none;
   border-top: 2px solid rgba(0, 0, 0, 0.2);
   border-left: 2px solid rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  transition: 1s;
-}
-
-.mainSlider:hover .slick-arrow {
-  opacity: 1;
-}
-
-.mainSlider .slick-next {
-  right: 17.7%;
-  transform: translateY(-50%) rotate(135deg);
-}
-.mainSlider .slick-prev {
-  left: 17.7%;
-  transform: translateY(-50%) rotate(-45deg);
-  z-index: 999;
 }
 .mainSlider .slick-next:hover,
 .mainSlider .slick-prev:hover {
