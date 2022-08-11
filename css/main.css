@@ -1,6 +1,8 @@
 * {
   /* outline: 1px solid red; */
 }
+.aBtn {
+}
 html {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 10px;
@@ -46,7 +48,7 @@ html {
 }
 .mainSlider {
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 15rem;
 }
 .mainSlider .slide {
   display: flex;
@@ -84,7 +86,7 @@ html {
  */
 .Cake {
   font-family: "Gowun Batang", serif;
-  margin-bottom: 10rem;
+  margin-bottom: 15rem;
 }
 .Cake .container {
   display: flex;
@@ -98,7 +100,7 @@ html {
   flex-direction: column;
   text-align: center;
   flex: 1;
-  padding: 3rem 1rem 5rem 1rem;
+  padding: 3rem 1rem 4.2rem 1rem;
 }
 .Cake h2 {
   padding-bottom: 3rem;
@@ -117,7 +119,7 @@ html {
   line-height: 2.5rem;
   font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 8.5rem;
+  margin-bottom: 5rem;
 }
 .Cake .popularCake p {
   position: relative;
@@ -125,7 +127,7 @@ html {
   font-size: 2.3rem;
   font-weight: 700;
   letter-spacing: 2px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 .Cake .popularCake p::after {
   content: "";
@@ -138,23 +140,29 @@ html {
   background: rgb(197, 197, 197);
 }
 .Cake .popularCake ul {
-  padding-bottom: 8.5rem;
 }
 .Cake .popularCake li {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 1.4rem;
   font-weight: 400;
   color: rgb(88, 88, 88);
-  line-height: 5rem;
+  line-height: 4rem;
+}
+.Cake .popularCake li:hover {
+  text-decoration: underline;
 }
 .Cake .leftBox .order {
-  display: block;
+  display: inline;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 1.3rem;
-  padding: 1.5rem;
+  padding: 1rem 3.5rem;
   color: #666;
   border: 1px solid #999;
-  margin-top: auto;
+  margin: auto auto 0 auto;
+}
+.Cake .leftBox .order:hover {
+  background: #333;
+  color: #fff;
 }
 .Cake .top {
   display: flex;
@@ -193,7 +201,7 @@ html {
 .Present {
   font-family: "Gowun Batang", serif;
   background: #fff;
-  margin-bottom: 10rem;
+  margin-bottom: 15rem;
 }
 .Present .container {
   text-align: center;
@@ -207,13 +215,13 @@ html {
 }
 .Present .left {
   display: flex;
-  flex: 1;
+  flex: 5;
 }
 .Present .right {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  padding: 3rem;
+  flex: 3;
+  padding: 1.5rem 3rem 0 3rem;
 }
 .Present strong {
   position: relative;
@@ -226,7 +234,7 @@ html {
   top: -1.5rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 13rem;
+  width: 11rem;
   height: 1px;
   background: rgb(197, 197, 197);
 }
@@ -238,10 +246,22 @@ html {
 }
 .Present .txtNum {
   font-family: "Gowun Batang", serif;
-
   font-size: 1.7rem;
   font-weight: 700;
-  padding-top: 2.5rem;
+  padding-top: 2.7rem;
+}
+.Present .order {
+  display: inline;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.3rem;
+  padding: 1rem 3.5rem;
+  color: #666;
+  border: 1px solid #999;
+  margin: auto auto 0 auto;
+}
+.Present .order:hover {
+  background: #333;
+  color: #fff;
 }
 /* 
 .Present;;
@@ -253,11 +273,14 @@ html {
 .jar {
   font-family: "Gowun Batang", serif;
   text-align: center;
-  margin-bottom: 10rem;
+  margin-bottom: 15rem;
+}
+.jar .container {
+  width: 123rem;
 }
 .jar h2 {
   font-size: 0;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 .jar strong {
   position: relative;
@@ -287,7 +310,7 @@ html {
 }
 .jarSlider {
   position: relative;
-  padding: 1.5rem;
+  padding: 2.5rem 1.5rem 1.5rem 1.5rem;
 }
 .jarSlider .slick-arrow {
   position: absolute;
@@ -315,13 +338,13 @@ html {
   transform: translateY(-50%) rotate(135deg);
 }
 .jarSlider img {
-  padding-bottom: 1rem;
+  padding-bottom: 1.3rem;
 }
 .jarSlider a {
   display: flex;
   justify-content: center;
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 300;
   border-radius: 50%;
   cursor: default;
@@ -333,6 +356,10 @@ html {
   cursor: pointer;
   margin-left: 1rem;
 }
+.jarSlider.slick-active {
+  filter: grayscale(0);
+}
+
 /* 
 .jar;;
  */
