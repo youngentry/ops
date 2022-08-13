@@ -9,4 +9,7 @@ $(function () {
   // $('.jarSlider').on('afterChange',function(e,s,c) {
   //   $('.jarSlider.slick-current')
   // })
+  $(".reviewSlider").slick({
+    slidesToShow: 3,
+  });
 });
