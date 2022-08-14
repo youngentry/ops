@@ -550,7 +550,18 @@ html {
   gap: 1.5rem;
 }
 .Re2 .right .rBox {
+  position: relative;
   margin-top: 15rem;
+}
+.Re2 .right .rBox::before {
+  font-family: xeicon !important;
+  content: "\e94b";
+  position: absolute;
+  top: -9rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: #999;
 }
 .Re2 .reviewBox {
   text-align: left;
