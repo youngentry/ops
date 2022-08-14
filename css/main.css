@@ -375,6 +375,7 @@ html {
   text-align: center;
   background: #fff;
   font-size: 2rem;
+  margin-bottom: 150px;
 }
 .Review .reviewBox {
   display: flex;
@@ -416,3 +417,95 @@ html {
 /* 
 .Review;;
  */
+
+/* 
+.Re;; */
+
+.Re2 {
+  text-align: center;
+}
+.Re2 .container {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 3rem 1.5rem 3rem 3rem;
+  gap: 3rem;
+}
+.Re2 .left {
+  /* position: sticky; */
+  /* top: 10em; */
+  flex: 1;
+  height: 50vh;
+  justify-content: center;
+}
+.Re2 .left h2 {
+  padding-top: 3rem;
+  font-family: "Gowun Batang", serif;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+.Re2 .left p {
+  font-size: 1.7rem;
+}
+
+.Re2 .right::-webkit-scrollbar {
+  width: 10px; /* 스크롤바의 너비 */
+}
+.Re2 .right::-webkit-scrollbar-thumb {
+  height: 30%; /* 스크롤바의 길이 */
+  background: rgba(0, 0, 0, 0.241); /* 스크롤바의 색상 */
+  border-radius: 10px;
+}
+.Re2 .right::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.431); /* 스크롤바의 색상 */
+}
+.Re2 .right::-webkit-scrollbar-track {
+  background: #ddd; /*스크롤바 뒷 배경 색상*/
+}
+
+.Re2 .right {
+  padding: 1.5rem;
+  height: 60rem;
+  overflow-y: auto;
+  display: flex;
+  flex: 1;
+  gap: 3rem;
+}
+.Re2 .right .lBox,
+.Re2 .right .rBox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.Re2 .right .rBox {
+  margin-top: 15rem;
+  /* transform: translateY(-30rem); */
+}
+.Re2 .right figure {
+  height: 20rem;
+  background: url(../img/review/287770192_754332028915384_2684752065921259653_n.jpg) no-repeat center center/cover;
+}
+.Re2 .reviewBox {
+  text-align: left;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.Re2 .reviewBox strong {
+  display: block;
+  padding: 1rem 0 1rem 0;
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+.Re2 .reviewBox p {
+  font-size: 1.5rem;
+}
+/* 
+.Re;; */
+
+/* .Footer;; */
+.Footer {
+  height: 200vh;
+}
+/* .Footer;; */
