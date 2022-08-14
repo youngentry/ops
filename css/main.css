@@ -427,79 +427,166 @@ html {
 .Re2 .container {
   display: flex;
   border: 1px solid #ddd;
-  border-radius: 5px;
   padding: 3rem 1.5rem 3rem 3rem;
   gap: 3rem;
+  margin-bottom: 15rem;
 }
 .Re2 .left {
-  /* position: sticky; */
-  /* top: 10em; */
-  flex: 1;
-  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  flex: 1;
 }
 .Re2 .left h2 {
-  padding-top: 3rem;
+  display: block;
   font-family: "Gowun Batang", serif;
   font-size: 3rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
 }
 .Re2 .left p {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
+  line-height: 1.45;
+  color: #777;
 }
-
+.Re2 .left .mostReview {
+  position: relative;
+  margin-top: 5rem;
+}
+.Re2 .left .mostReview::before {
+  content: "";
+  position: absolute;
+  top: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5rem;
+  height: 1px;
+  background: #ddd;
+}
+.Re2 .left .mostReview strong {
+  display: block;
+  font-family: "Gowun Batang", serif;
+  font-size: 1.9rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+.Re2 .mostPhoto {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+.Re2 .photo {
+  padding: 0.5rem;
+  width: 15rem;
+  border: 1px solid #ddd;
+}
+.Re2 .mostPhoto figure {
+  height: 16rem;
+  margin-bottom: 0.8rem;
+}
+.Re2 .photo01 figure {
+  background: url(../img/review/most/before.jpg) no-repeat center center/cover;
+}
+.Re2 .photo02 figure {
+  background: url(../img/review/most/cookieset.jpg) no-repeat center center/cover;
+}
+.Re2 .photo03 figure {
+  background: url(../img/review/most/jud.jpg) no-repeat center center/cover;
+}
+.Re2 .mostPhoto p {
+  font-size: 1.3rem;
+  color: #000;
+}
+.Re2 .photo:hover p {
+  text-decoration: underline;
+}
+.Re2 .mostPhoto .price {
+  position: relative;
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #999;
+}
+.Re2 .mostPhoto .price::after {
+  font-family: xeicon !important;
+  content: "\e93f";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.Re2 .left a {
+  position: relative;
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #999;
+}
 .Re2 .right::-webkit-scrollbar {
-  width: 10px; /* 스크롤바의 너비 */
+  width: 10px;
 }
 .Re2 .right::-webkit-scrollbar-thumb {
-  height: 30%; /* 스크롤바의 길이 */
-  background: rgba(0, 0, 0, 0.241); /* 스크롤바의 색상 */
+  height: 20%;
+  background: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
 .Re2 .right::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.431); /* 스크롤바의 색상 */
+  background: rgba(0, 0, 0, 0.4);
 }
 .Re2 .right::-webkit-scrollbar-track {
-  background: #ddd; /*스크롤바 뒷 배경 색상*/
+  background: #ddd;
 }
 
 .Re2 .right {
   padding: 1.5rem;
-  height: 60rem;
+  height: 50rem;
   overflow-y: auto;
   display: flex;
   flex: 1;
-  gap: 3rem;
+  gap: 1.5rem;
 }
 .Re2 .right .lBox,
 .Re2 .right .rBox {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1.5rem;
 }
 .Re2 .right .rBox {
   margin-top: 15rem;
-  /* transform: translateY(-30rem); */
+}
+.Re2 .reviewBox {
+  text-align: left;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+}
+.Re2 .reviewBox:hover {
+  border: 1px solid #999;
+  cursor: pointer;
+}
+.Re2 .reviewBox strong {
+  display: block;
+  line-height: 1.618;
+  padding: 1rem 0 0 0;
+  font-size: 1.5rem;
+}
+.Re2 .reviewBox p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.15;
 }
 .Re2 .right figure {
   height: 20rem;
   background: url(../img/review/287770192_754332028915384_2684752065921259653_n.jpg) no-repeat center center/cover;
 }
-.Re2 .reviewBox {
-  text-align: left;
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+.Re2 .reviewBox01 figure {
+  background: url(../img/review/29f104c08dcf9be6edd42da10509fade.jpg) no-repeat center center/cover;
 }
-.Re2 .reviewBox strong {
-  display: block;
-  padding: 1rem 0 1rem 0;
-  font-size: 1.9rem;
-  font-weight: 500;
+.Re2 .reviewBox02 figure {
+  background: url(../img/review/4248b07756562d91d681b964423ce56c.jpeg) no-repeat center center/cover;
 }
-.Re2 .reviewBox p {
-  font-size: 1.5rem;
+.Re2 .reviewBox03 figure {
+  background: url(../img/review/cf727501f5d091d3405c6d90b28c7944.jpg) no-repeat center center/cover;
+}
+.Re2 .reviewBox04 figure {
+  background: url(../img/review/f6ae5fcee5bdfe2f0cc7f7c50b3195fc.jpg) no-repeat center center/cover;
 }
 /* 
 .Re;; */
@@ -507,5 +594,52 @@ html {
 /* .Footer;; */
 .Footer {
   height: 200vh;
+}
+.Footer .container {
+  display: flex;
+}
+.Footer .left {
+  flex: 4;
+}
+.Footer h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.Footer p:first-of-type {
+  position: relative;
+  text-align: center;
+  width: 90%;
+  font-size: 2rem;
+  margin: 1rem 0 1rem 0;
+  padding: 2rem;
+  color: #fff;
+  background: #369;
+  text-transform: uppercase;
+  border-radius: 1rem;
+}
+.Footer p {
+  position: relative;
+  text-align: center;
+  width: 90%;
+  font-size: 2rem;
+  margin: 1rem 0 1rem 0;
+  padding: 2rem;
+  color: #000;
+  background: #fff;
+  text-transform: uppercase;
+  border-radius: 1rem;
+}
+.Footer p:first-of-type:after {
+  position: absolute;
+  font-family: xeicon !important;
+  content: "\ea3e";
+  top: 50%;
+  transform: translateY(-50%);
+  right: -3rem;
+  font-size: 2rem;
+  color: #369;
+}
+.Footer .right {
+  flex: 8;
 }
 /* .Footer;; */
