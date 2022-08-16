@@ -1,5 +1,7 @@
 $(function () {
-  $(".mainSlider").slick({});
+  $(".mainSlider").slick({
+    autoplay: true,
+  });
 
   $(".jarSlider").slick({
     centerMode: true,

@@ -39,11 +39,23 @@ html {
   position: relative;
 }
 .Banner .info ul {
+  opacity: 0;
+  visibility: hidden;
   position: absolute;
-  top: 3rem;
-  right: 0;
-  background: #ff0;
-  z-index: 999;
+  top: 3.5rem;
+  right: -5%;
+  padding: 0.5rem 1rem;
+  line-height: 2;
+  width: 10rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  z-index: 1000;
+}
+.Banner .info:hover ul {
+  opacity: 1;
+  visibility: visible;
 }
 /* .Banner;; */
 
@@ -79,7 +91,8 @@ html {
   padding: 0 1rem;
 }
 .Header .smenu {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
   position: absolute;
   bottom: 2rem;
   left: 0;
@@ -90,9 +103,11 @@ html {
   line-height: 2.5;
   background: #fff;
   border: 1px solid #ddd;
+  transition: 0.2s;
 }
 .Header .menu > li:hover .smenu {
-  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 .Header .user {
   display: flex;
@@ -109,7 +124,7 @@ html {
   font-size: 1.5rem;
   border: none;
   border-radius: 2rem;
-  background: rgb(240, 240, 240);
+  background: rgb(242, 242, 242);
 }
 .Header .searchForm button {
   background: none;
@@ -123,7 +138,7 @@ html {
   right: 1rem;
   transform: translateY(-50%);
   font-size: 1.7rem;
-  color: #333;
+  color: #666;
 }
 /* 
 .Header;;
@@ -178,8 +193,8 @@ html {
 
 .mainSlider .slick-next:hover,
 .mainSlider .slick-prev:hover {
-  border-top: 2px solid rgba(0, 0, 0, 0.6);
-  border-left: 2px solid rgba(0, 0, 0, 0.6);
+  border-top: 2px solid rgba(0, 0, 0, 0.5);
+  border-left: 2px solid rgba(0, 0, 0, 0.5);
 }
 /* 
 .MainVisual;;
