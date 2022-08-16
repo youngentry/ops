@@ -12,6 +12,41 @@ html {
   margin: 0 auto;
 }
 
+/* .Banner;; */
+.Banner {
+  border-bottom: 1px solid#ddd;
+}
+.Banner .container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 4rem;
+  color: #333;
+}
+.Banner div > a ~ a::before {
+  content: "";
+  display: inline-block;
+  margin: 0 1.5rem;
+  width: 1px;
+  height: 1rem;
+  background: #ddd;
+}
+.Banner a i {
+  color: #666;
+}
+.Banner .info {
+  position: relative;
+}
+.Banner .info ul {
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  background: #ff0;
+  z-index: 999;
+}
+/* .Banner;; */
+
 /* 
 .Header;;
  */
@@ -48,8 +83,8 @@ html {
   position: absolute;
   bottom: 2rem;
   left: 0;
-  transform: translate(-10%, 100%);
-  padding: 0 1rem;
+  transform: translate(-6%, 100%);
+  padding: 0.5rem 1rem;
   width: 20rem;
   font-size: 1.3rem;
   line-height: 2.5;
@@ -80,11 +115,12 @@ html {
   background: none;
   border: none;
   cursor: pointer;
+  padding: 0;
 }
 .Header .searchForm i {
   position: absolute;
   top: 50%;
-  right: 3rem;
+  right: 1rem;
   transform: translateY(-50%);
   font-size: 1.7rem;
   color: #333;
@@ -116,14 +152,30 @@ html {
 .mainSlider .slick-arrow {
   position: absolute;
   top: 50%;
-  width: 3rem;
-  height: 3rem;
+  width: 1.5rem;
+  height: 1.5rem;
   font-size: 0%;
   background: none;
   border: none;
   border-top: 2px solid rgba(0, 0, 0, 0.2);
   border-left: 2px solid rgba(0, 0, 0, 0.2);
 }
+.mainSlider .slick-next,
+.mainSlider .slick-prev {
+  transform: translateX(-50%);
+  z-index: 999;
+}
+.mainSlider .slick-prev {
+  top: 93%;
+  left: 48%;
+  transform: translateX(-50%) rotate(-45deg);
+}
+.mainSlider .slick-next {
+  top: 93%;
+  right: 48%;
+  transform: translateX(-50%) rotate(135deg);
+}
+
 .mainSlider .slick-next:hover,
 .mainSlider .slick-prev:hover {
   border-top: 2px solid rgba(0, 0, 0, 0.6);
@@ -629,14 +681,15 @@ html {
 }
 .Re2 .reviewBox strong {
   display: block;
-  line-height: 1.618;
-  padding: 1rem 0 0 0;
+  padding: 1rem 0 0.8rem 0;
   font-size: 1.5rem;
+  color: #333;
 }
 .Re2 .reviewBox p {
   font-size: 1.3rem;
   font-weight: 300;
-  line-height: 1.15;
+  line-height: 1.2;
+  color: #333;
 }
 .Re2 .right figure {
   height: 20rem;
@@ -658,54 +711,5 @@ html {
 .Re;; */
 
 /* .Footer;; */
-.Footer {
-  height: 200vh;
-}
-.Footer .container {
-  display: flex;
-}
-.Footer .left {
-  flex: 4;
-}
-.Footer h2 {
-  font-size: 3rem;
-  text-transform: uppercase;
-}
-.Footer p:first-of-type {
-  position: relative;
-  text-align: center;
-  width: 90%;
-  font-size: 2rem;
-  margin: 1rem 0 1rem 0;
-  padding: 2rem;
-  color: #fff;
-  background: #369;
-  text-transform: uppercase;
-  border-radius: 1rem;
-}
-.Footer p {
-  position: relative;
-  text-align: center;
-  width: 90%;
-  font-size: 2rem;
-  margin: 1rem 0 1rem 0;
-  padding: 2rem;
-  color: #000;
-  background: #fff;
-  text-transform: uppercase;
-  border-radius: 1rem;
-}
-.Footer p:first-of-type:after {
-  position: absolute;
-  font-family: xeicon !important;
-  content: "\ea3e";
-  top: 50%;
-  transform: translateY(-50%);
-  right: -3rem;
-  font-size: 2rem;
-  color: #369;
-}
-.Footer .right {
-  flex: 8;
-}
+
 /* .Footer;; */
