@@ -329,6 +329,10 @@ html {
 .Present .content {
   display: flex;
 }
+.Present h2 {
+  font-size: 3rem;
+  padding-bottom: 4rem;
+}
 .Present .left {
   display: flex;
   flex: 5;
@@ -351,7 +355,7 @@ html {
 .Present strong::before {
   content: "";
   position: absolute;
-  top: -1.5rem;
+  top: -2rem;
   left: 50%;
   transform: translateX(-50%);
   width: 11rem;
@@ -369,12 +373,13 @@ html {
   font-size: 1.7rem;
   font-weight: 700;
   padding-top: 3rem;
+  padding-top: 4rem;
 }
 .Present .order {
   display: inline;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 1.3rem;
-  padding: 1rem 3.5rem;
+  padding: 1rem 4rem;
   color: #666;
   border: 1px solid #999;
   margin: 3rem auto 0 auto;
@@ -683,7 +688,7 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 3rem;
-  color: #999;
+  color: rgba(153, 153, 153, 0.9);
 }
 .Re2 .reviewBox {
   text-align: left;
@@ -721,6 +726,16 @@ html {
 }
 .Re2 .reviewBox04 figure {
   background: url(../img/review/f6ae5fcee5bdfe2f0cc7f7c50b3195fc.jpg) no-repeat center center/cover;
+}
+.Re2ScrollPointer {
+  position: absolute;
+  display: none;
+  font-size: 3rem;
+  border-radius: 50%;
+  color: #777;
+  background: rgba(0, 0, 0, 0.1);
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 /* 
 .Re;; */
