@@ -140,6 +140,9 @@ html {
   font-size: 1.7rem;
   color: #666;
 }
+.menuBtn {
+  display: none;
+}
 /* 
 .Header;;
  */
@@ -177,18 +180,17 @@ html {
 }
 .mainSlider .slick-next,
 .mainSlider .slick-prev {
-  transform: translateX(-50%);
   z-index: 999;
 }
 .mainSlider .slick-prev {
   top: 93%;
-  left: 48%;
-  transform: translateX(-50%) rotate(-45deg);
+  left: 50%;
+  transform: translateX(-150%) rotate(-45deg);
 }
 .mainSlider .slick-next {
   top: 93%;
-  right: 48%;
-  transform: translateX(-50%) rotate(135deg);
+  right: 50%;
+  transform: translateX(150%) rotate(135deg);
 }
 
 .mainSlider .slick-next:hover,
@@ -954,13 +956,19 @@ html {
     margin: 0 auto;
   }
 
+  .Wrapper {
+  }
+
   /* .Banner;; */
   .Banner {
     border-bottom: 1px solid#ddd;
   }
   .Banner .container {
-    display: flex;
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
     justify-content: space-between;
+    padding: 0 1rem;
     font-size: 1.2rem;
     font-weight: 300;
     line-height: 4rem;
@@ -1005,47 +1013,105 @@ html {
   .Header;;
    */
   .Header {
-    line-height: 10rem;
-    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    line-height: 2rem;
+    background: #fff;
+    transition: 0.5s;
+    z-index: 1000;
   }
+
   .Header nav {
-    display: flex;
+    display: block;
     justify-content: space-between;
     color: #333;
   }
   .Header nav h1 {
     font-size: 0;
+    padding: 1.5rem;
   }
-  .Header nav > ul {
+  .Header nav .menu {
+    position: absolute;
+    left: -100%;
     display: flex;
-    font-size: 1.5rem;
-    gap: 3rem;
+    flex-direction: column;
+    margin-top: 0rem;
+    padding: 1.5rem;
+    width: 100%;
+    height: 100vh;
+    gap: 0rem;
+    font-size: 2.1rem;
     letter-spacing: -0.025em;
     color: #555;
-  }
-  .Header ul {
+    background: #fff;
+    border-top: 1px solid#ddd;
+    transition: 0.5s;
     z-index: 999;
+  }
+  .Header nav .menu.on {
+    left: 0;
+  }
+
+  .Header img {
+    height: 5rem;
   }
   .Header .menu li {
     position: relative;
   }
+  .Header .menu > li {
+    border-bottom: 1px solid #ddd;
+    padding: 2rem 0;
+  }
+  .Header .menu > li > a {
+    position: relative;
+  }
+  .Header .menu > li > a::after {
+    font-family: xeicon !important;
+    content: "\e936";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -2rem;
+    font-size: 1.7rem;
+  }
+  .Header .menu > li.on > a::after {
+    font-family: xeicon !important;
+    content: "\e930";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -2rem;
+    font-size: 1.7rem;
+  }
+  .Header .menu > li > a:last-child::after {
+    font-family: xeicon !important;
+    content: "";
+  }
   .Header .menu li > a {
-    padding: 0 1rem;
+    padding: 0 0rem;
+  }
+  .Header .menu li.on {
+    display: block;
   }
   .Header .smenu {
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    position: static;
     bottom: 2rem;
     left: 0;
-    transform: translate(-6%, 100%);
-    padding: 0.5rem 1rem;
+    transform: translate(0, 0);
+    padding: 1rem 0 0 0rem;
     width: 20rem;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     line-height: 2.5;
     background: #fff;
-    border: 1px solid #ddd;
+    border: none;
     transition: 0.2s;
+  }
+  .Header .menu li.on .smenu {
+    display: block;
   }
   .Header .menu > li:hover .smenu {
     opacity: 1;
@@ -1057,6 +1123,7 @@ html {
     font-size: 2rem;
   }
   .Header .searchForm {
+    display: none;
     position: relative;
     font-size: 0;
   }
@@ -1082,6 +1149,19 @@ html {
     font-size: 1.7rem;
     color: #666;
   }
+  .menuBtn {
+    position: fixed;
+    display: block;
+    top: 4rem;
+    right: 1rem;
+    transform: translateY(-50%);
+    padding: 5px;
+    font-size: 3rem;
+    color: #444;
+    border-radius: 5px;
+    z-index: 1000;
+    cursor: pointer;
+  }
   /* 
   .Header;;
    */
@@ -1098,6 +1178,9 @@ html {
   .mainSlider .slide {
     display: flex;
   }
+  .mainSlider img {
+    height: 50rem;
+  }
   .mainSlider .slide .left,
   .mainSlider .slide .right {
     flex: 1;
@@ -1107,6 +1190,7 @@ html {
     text-align: center;
   }
   .mainSlider .slick-arrow {
+    visibility: hidden;
     position: absolute;
     top: 50%;
     width: 1.5rem;
@@ -1146,6 +1230,7 @@ html {
   .Cake;;
    */
   .Cake {
+    padding: 0 1rem;
     font-family: "Gowun Batang", serif;
     margin-bottom: 15rem;
   }
@@ -1278,6 +1363,7 @@ html {
   }
   .Present .content {
     display: flex;
+    flex-direction: column;
   }
   .Present h2 {
     font-size: 3rem;
@@ -1350,7 +1436,7 @@ html {
     margin-bottom: 15rem;
   }
   .jar .container {
-    width: 123rem;
+    width: 100%;
   }
   .jar h2 {
     font-size: 0;
@@ -1496,14 +1582,16 @@ html {
   .Re;; */
 
   .Re2 {
+    padding: 0 1rem;
     text-align: center;
   }
   .Re2 .container {
     display: flex;
+    flex-direction: column;
     border: 1px solid #ddd;
     padding: 3rem 1.5rem 3rem 3rem;
     gap: 3rem;
-    margin-bottom: 15rem;
+    margin-bottom: 3rem;
   }
   .Re2 .left {
     display: flex;
@@ -1608,11 +1696,12 @@ html {
   .Re2 .right::-webkit-scrollbar-track {
     background: #ddd;
   }
-
   .Re2 .right {
-    padding: 1.5rem;
+    width: 52rem;
+    padding: 1.5rem 0;
     height: 50rem;
-    overflow-y: auto;
+    overflow-y: hidden;
+    overflow-x: scroll;
     display: flex;
     flex: 1;
     gap: 1.5rem;
@@ -1621,14 +1710,15 @@ html {
   .Re2 .right .rBox {
     flex: 1;
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    flex-direction: row;
+    gap: 1rem;
   }
   .Re2 .right .rBox {
     position: relative;
-    margin-top: 15rem;
+    margin-top: 0rem;
   }
   .Re2 .right .rBox::before {
+    display: none;
     font-family: xeicon !important;
     content: "\e94b";
     position: absolute;
@@ -1640,6 +1730,7 @@ html {
   }
   .Re2 .reviewBox {
     text-align: left;
+    width: 22rem;
     padding: 1.5rem;
     border: 1px solid #ddd;
   }
@@ -1678,6 +1769,7 @@ html {
   .Re2ScrollPointer {
     position: absolute;
     display: none;
+    opacity: 0;
     font-size: 3rem;
     border-radius: 50%;
     color: #777;
@@ -1690,14 +1782,16 @@ html {
 
   /* .Footer;; */
   .Footer {
+    text-align: center;
     color: #ddd;
     background: #444;
     border-top: 1px solid #ddd;
-    padding: 6rem 0 0 0;
+    padding: 3rem 0rem 0 0rem;
   }
   .Footer .container {
     display: flex;
-    padding-bottom: 3rem;
+    flex-direction: column;
+    padding: 0 1rem 3rem 1rem;
   }
   .Footer span {
     color: #fff;
@@ -1705,15 +1799,15 @@ html {
   .Footer .container > div {
   }
   .Footer .left {
-    margin-right: 1.5rem;
+    margin-right: 0rem;
     flex: 1;
   }
   .Footer h3 {
     position: relative;
     display: inline-block;
-    margin-bottom: 3rem;
-    font-size: 1.5rem;
-    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 2.1rem;
+    font-weight: 500;
   }
   .Footer .service h3:after {
     content: "";
@@ -1734,8 +1828,21 @@ html {
     height: 1px;
     background: #fff;
   }
+  .Footer .right .service {
+    position: relative;
+  }
+  .Footer .right .service::before {
+    content: "";
+    position: absolute;
+    top: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 1px;
+    background: rgb(112, 112, 112);
+  }
   .Footer p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: rgb(188, 188, 188);
     font-weight: 300;
   }
@@ -1747,34 +1854,39 @@ html {
     display: block;
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
   .Footer .left p {
     position: relative;
-    line-height: 2;
+    line-height: 1.5;
     color: #fff;
   }
   .Footer .left span {
-    display: inline-block;
-    width: 6.5rem;
+    display: inline;
     color: rgb(188, 188, 188);
   }
   .Footer .right {
     display: flex;
+    flex-direction: column;
     flex: 3;
   }
   .Footer .service {
     flex: 1;
-    padding-right: 4rem;
+    padding-bottom: 6rem;
+    padding-right: 0rem;
     /* border-left: 1px solid #ddd; */
+  }
+  .Footer .right .service:last-of-type {
+    padding-bottom: 0rem;
   }
   .Footer .bank p {
     position: relative;
-    line-height: 2;
-    padding-left: 1rem;
+    line-height: 1.5;
+    padding-left: 0rem;
   }
   .Footer .bank p::before {
     content: "";
+    display: none;
     position: absolute;
     top: 50%;
     left: 0;
@@ -1788,12 +1900,14 @@ html {
     display: block;
     padding-top: 1rem;
     font-size: 1.5rem;
+    font-weight: 5000;
     color: rgb(188, 188, 188);
   }
   .Footer .bank strong > span {
     color: #fff;
   }
-  .Footer .return h3 {
+  .Footer .return {
+    display: none;
   }
   .Footer .return p {
     line-height: 1.3em;
@@ -1805,20 +1919,23 @@ html {
     padding-bottom: 1rem;
   }
   .Footer .return .deliExcep {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .Footer .return .deliExcep span {
     font-weight: 400;
   }
+
   .Footer .info a {
     position: relative;
     display: block;
-    font-size: 1.3rem;
-    padding-left: 1rem;
-    margin-bottom: 2rem;
+    padding-left: 0rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: rgb(188, 188, 188);
   }
   .Footer .info a::before {
     content: "";
+    display: none;
     position: absolute;
     top: 57%;
     left: 0;

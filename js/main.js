@@ -1,4 +1,14 @@
 $(function () {
+  $(".Header .menu li").on("click", function (e) {
+    e.preventDefault();
+    $(this).addClass("on").siblings().removeClass("on");
+  });
+
+  $(".menuBtn").on("click", function (e) {
+    e.preventDefault();
+    $(".menu").toggleClass("on");
+  });
+
   $(".mainSlider").slick({
     autoplay: true,
   });
