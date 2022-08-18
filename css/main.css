@@ -151,52 +151,43 @@ html {
 .MainVisual;;
  */
 .MainVisual {
+  font-family: "Gowun Batang", serif;
+  padding-bottom: 10rem;
 }
-.mainSlider {
+.MainVisual .mainSlider {
   position: relative;
-  margin-bottom: 15rem;
 }
-.mainSlider .slide {
-  display: flex;
+.MainVisual .mainSlider figure {
+  position: relative;
+  height: calc(100vh - 140px);
 }
-.mainSlider .slide .left,
-.mainSlider .slide .right {
-  flex: 1;
+.MainVisual .slide01 figure {
+  background: url(../img/mainthis/bakery-1868396_1920.jpg) no-repeat center left/cover;
 }
-.mainSlider .left {
-  padding: 10rem 0;
-  text-align: center;
-}
-.mainSlider .slick-arrow {
-  position: absolute;
-  top: 50%;
-  width: 1.5rem;
-  height: 1.5rem;
-  font-size: 0%;
-  background: none;
-  border: none;
-  border-top: 2px solid rgba(0, 0, 0, 0.2);
-  border-left: 2px solid rgba(0, 0, 0, 0.2);
-}
-.mainSlider .slick-next,
-.mainSlider .slick-prev {
-  z-index: 999;
-}
-.mainSlider .slick-prev {
-  top: 93%;
-  left: 50%;
-  transform: translateX(-150%) rotate(-45deg);
-}
-.mainSlider .slick-next {
-  top: 93%;
-  right: 50%;
-  transform: translateX(150%) rotate(135deg);
+.MainVisual .slide02 figure {
+  background: url(../img/mainthis/bread-6486963_1920.jpg) no-repeat center center/cover;
 }
 
-.mainSlider .slick-next:hover,
-.mainSlider .slick-prev:hover {
-  border-top: 2px solid rgba(0, 0, 0, 0.5);
-  border-left: 2px solid rgba(0, 0, 0, 0.5);
+.MainVisual .inner {
+  position: absolute;
+}
+.MainVisual h2 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.MainVisual p {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+.MainVisual .slide01 .inner {
+  top: 32%;
+  left: 48%;
+}
+.MainVisual .slide02 .inner {
+  top: 17%;
+  left: 38%;
+  color: #fff;
 }
 /* 
 .MainVisual;;
@@ -446,21 +437,21 @@ html {
   height: 3rem;
   font-size: 0;
   border: none;
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
-  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  border-top: 2px solid rgba(255, 255, 255, 1);
+  border-left: 2px solid rgba(255, 255, 255, 1);
   background: 0;
   z-index: 999;
 }
-.jarSlider .slick-arrow:hover {
-  border-top: 1px solid rgba(0, 0, 0, 0.6);
-  border-left: 1px solid rgba(0, 0, 0, 0.6);
-}
+/* .jarSlider .slick-arrow:hover {
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  border-left: 1px solid rgba(255, 255, 255, 0.6);
+} */
 .jarSlider .slick-prev {
-  left: 10.5%;
+  left: 14.5%;
   transform: translateY(-50%) rotate(-45deg);
 }
 .jarSlider .slick-next {
-  right: 10.5%;
+  right: 14.5%;
   transform: translateY(-50%) rotate(135deg);
 }
 .jarSlider img {
@@ -603,7 +594,7 @@ html {
   padding-bottom: 1rem;
 }
 .Review .photo {
-  padding: 0.5rem;
+  padding: 1.5rem 0.5rem;
   width: 15rem;
   border: 1px solid #ddd;
 }
@@ -1170,57 +1161,46 @@ html {
   .MainVisual;;
    */
   .MainVisual {
+    font-family: "Gowun Batang", serif;
+    padding-bottom: 10rem;
   }
-  .mainSlider {
+  .MainVisual .mainSlider {
     position: relative;
-    margin-bottom: 10rem;
   }
-  .mainSlider .slide {
-    display: flex;
+  .MainVisual .mainSlider figure {
+    position: relative;
+    height: calc(100vh - 140px);
   }
-  .mainSlider img {
-    height: 50rem;
+  .MainVisual .slide01 figure {
+    background: url(../img/mainthis/bakery-1868396_1920.jpg) no-repeat center center/cover;
   }
-  .mainSlider .slide .left,
-  .mainSlider .slide .right {
-    flex: 1;
-  }
-  .mainSlider .left {
-    padding: 10rem 0;
-    text-align: center;
-  }
-  .mainSlider .slick-arrow {
-    visibility: hidden;
-    position: absolute;
-    top: 50%;
-    width: 1.5rem;
-    height: 1.5rem;
-    font-size: 0%;
-    background: none;
-    border: none;
-    border-top: 2px solid rgba(0, 0, 0, 0.2);
-    border-left: 2px solid rgba(0, 0, 0, 0.2);
-  }
-  .mainSlider .slick-next,
-  .mainSlider .slick-prev {
-    transform: translateX(-50%);
-    z-index: 999;
-  }
-  .mainSlider .slick-prev {
-    top: 93%;
-    left: 48%;
-    transform: translateX(-50%) rotate(-45deg);
-  }
-  .mainSlider .slick-next {
-    top: 93%;
-    right: 48%;
-    transform: translateX(-50%) rotate(135deg);
+  .MainVisual .slide02 figure {
+    background: url(../img/mainthis/bread-6486963_1920.jpg) no-repeat center center/cover;
   }
 
-  .mainSlider .slick-next:hover,
-  .mainSlider .slick-prev:hover {
-    border-top: 2px solid rgba(0, 0, 0, 0.5);
-    border-left: 2px solid rgba(0, 0, 0, 0.5);
+  .MainVisual .inner {
+    position: absolute;
+  }
+  .MainVisual h2 {
+    font-size: 2.7rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+  }
+  .MainVisual p {
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+  .MainVisual .slide01 .inner {
+    top: 28.5%;
+    left: 39%;
+    right: 1%;
+  }
+  .MainVisual .slide02 .inner {
+    top: 25%;
+    left: 7%;
+    color: #fff;
   }
   /* 
   .MainVisual;;

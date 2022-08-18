@@ -10,7 +10,10 @@ $(function () {
   });
 
   $(".mainSlider").slick({
-    autoplay: true,
+    // autoplay: true,
+    arrows: false,
+    pauseOnFocus: false,
+    pauseOnHover: false,
   });
 
   $(".jarSlider").slick({
