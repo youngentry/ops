@@ -1301,12 +1301,12 @@ html {
   }
   .Cake .top {
     display: flex;
-    gap: 3rem;
+    gap: 1.5rem;
     margin-bottom: 3rem;
   }
   .Cake .bottom {
     display: flex;
-    gap: 3rem;
+    gap: 1.5rem;
   }
   .Cake .rightBox {
     text-align: center;
@@ -1316,7 +1316,7 @@ html {
     text-decoration: underline;
   }
   .Cake .rightBox img {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   .Cake .rightBox strong {
     display: block;
@@ -1460,21 +1460,21 @@ html {
     height: 3rem;
     font-size: 0;
     border: none;
-    border-top: 1px solid rgba(0, 0, 0, 0.3);
-    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 1);
+    border-left: 1px solid rgba(255, 255, 255, 1);
     background: 0;
     z-index: 999;
   }
   .jarSlider .slick-arrow:hover {
-    border-top: 1px solid rgba(0, 0, 0, 0.6);
-    border-left: 1px solid rgba(0, 0, 0, 0.6);
+    border-top: 2px solid rgba(255, 255, 255, 1);
+    border-left: 2px solid rgba(255, 255, 255, 1);
   }
   .jarSlider .slick-prev {
-    left: 10.5%;
+    left: 14.5%;
     transform: translateY(-50%) rotate(-45deg);
   }
   .jarSlider .slick-next {
-    right: 10.5%;
+    right: 14.5%;
     transform: translateY(-50%) rotate(135deg);
   }
   .jarSlider img {
