@@ -1694,7 +1694,7 @@ html {
         position: relative;
         display: inline-block;
         margin-bottom: 1rem;
-        font-size: 2.1rem;
+        font-size: 1.7rem;
         font-weight: 500;
     }
     .Footer .service h3:after {
@@ -1746,7 +1746,7 @@ html {
     }
     .Footer .left p {
         position: relative;
-        line-height: 1.5;
+        line-height: 1.2;
         color: #fff;
     }
     .Footer .left span {
@@ -1769,7 +1769,7 @@ html {
     }
     .Footer .bank p {
         position: relative;
-        line-height: 1.5;
+        line-height: 1.2;
         padding-left: 0rem;
     }
     .Footer .bank p::before {
@@ -1817,7 +1817,7 @@ html {
         position: relative;
         display: block;
         padding-left: 0rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
         font-size: 1.5rem;
         color: rgb(188, 188, 188);
     }
@@ -1849,7 +1849,7 @@ html {
         margin-bottom: 1rem;
     }
     .Footer .bottom {
-        line-height: 1.35;
+        line-height: 1.15;
     }
     .Footer .bottom span {
         margin-top: 1rem;
