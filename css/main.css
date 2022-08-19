@@ -1674,12 +1674,12 @@ html {
         color: #ddd;
         background: #444;
         border-top: 1px solid #ddd;
-        padding: 3rem 0rem 0 0rem;
+        padding: 2rem 0rem 0 0rem;
     }
     .Footer .container {
         display: flex;
         flex-direction: column;
-        padding: 0 1rem 3rem 1rem;
+        padding: 0 1rem 2rem 1rem;
     }
     .Footer span {
         color: #fff;
@@ -1722,7 +1722,7 @@ html {
     .Footer .right .service::before {
         content: "";
         position: absolute;
-        top: -3rem;
+        top: -2rem;
         left: 50%;
         transform: translateX(-50%);
         width: 100%;
@@ -1760,7 +1760,7 @@ html {
     }
     .Footer .service {
         flex: 1;
-        padding-bottom: 6rem;
+        padding-bottom: 4rem;
         padding-right: 0rem;
         /* border-left: 1px solid #ddd; */
     }
@@ -1788,7 +1788,7 @@ html {
         display: block;
         padding-top: 1rem;
         font-size: 1.5rem;
-        font-weight: 5000;
+        font-weight: 500;
         color: rgb(188, 188, 188);
     }
     .Footer .bank strong > span {
@@ -1837,8 +1837,8 @@ html {
         text-decoration: underline;
     }
     .Footer .bottom {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
         background: rgb(59, 59, 59);
     }
     .Footer .bottom .container {
