@@ -330,8 +330,9 @@ html {
     display: flex;
     flex: 5;
 }
-/* .Present .left figure {
-} */
+.Present .left figure {
+    background: url(../img/present/batch_batch_copy.jpg);
+}
 .Present .right {
     display: flex;
     flex-direction: column;
