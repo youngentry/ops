@@ -548,7 +548,7 @@ html {
     padding-bottom: 1rem;
 }
 .Review .photo {
-    padding: 1.5rem 0.5rem;
+    padding: 1rem 0.5rem;
     width: 15rem;
     border: 1px solid #ddd;
 }
@@ -1148,13 +1148,13 @@ html {
         line-height: 1.1;
     }
     .MainVisual .slide01 .inner {
-        top: 28.5%;
-        left: 39%;
+        top: 59%;
+        left: 10%;
         right: 1%;
     }
     .MainVisual .slide02 .inner {
         top: 25%;
-        left: 7%;
+        left: 10%;
         color: #fff;
     }
     /* 
