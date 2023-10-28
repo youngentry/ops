@@ -1,635 +1,517 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>OPS - 옵스</title>
-        <link rel="icon" type="image/png" href="./img/apple-icon-120x120.png" />
-        <link rel="stylesheet" href="./css/reset.css" />
-        <link rel="stylesheet" href="./css/slick.css" />
-        <link rel="stylesheet" href="./css/main.css" />
-        <script src="./js/jquery-1.12.4.min.js"></script>
-        <script src="./js/slick.min.js"></script>
-        <script src="./js/main.js"></script>
-    </head>
-    <body>
-        <div class="Wrapper">
-            <!-- .Banner;; -->
-            <section class="Banner">
-                <div class="container">
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <a href="">개인결제</a>
-                            </li>
-                            <li>
-                                <a href="">매장안내</a>
-                            </li>
-                            <li class="community">
-                                <a href=""
-                                    >커뮤니티 <i class="xi-caret-down-min"></i>
-                                </a>
-                                <ul>
-                                    <li><a href="">NOTICE</a></li>
-                                    <li><a href="">REVIEWS</a></li>
-                                    <li><a href="">Q&A</a></li>
-                                    <li><a href="">매장안내</a></li>
-                                    <li><a href="">RVIP전용</a></li>
-                                    <li><a href="">FAQ</a></li>
-                                    <li><a href="">EVENT</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="">포토리뷰</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="user">
-                        <a href="">로그인</a>
-                        <a href="">회원가입</a>
-                        <a href="">장바구니</a>
-                        <a href="">주문조회</a>
-                        <a href="">마이페이지</a>
-                        <a href="">고객센터</a>
-                    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OPS - 옵스</title>
+    <link rel="icon" type="image/png" href="./img/apple-icon-120x120.png" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+  </head>
+  <body>
+    <div class="Wrapper">
+      <!-- .Banner;; -->
+      <section class="Banner">
+        <div class="container">
+          <div class="info">
+            <ul>
+              <li>
+                <a href="javascript:">개인결제</a>
+              </li>
+              <li>
+                <a href="javascript:">매장안내</a>
+              </li>
+              <li class="community">
+                <a href="javascript:">커뮤니티 <i class="xi-caret-down-min"></i> </a>
+                <ul>
+                  <li><a href="javascript:">NOTICE</a></li>
+                  <li><a href="javascript:">REVIEWS</a></li>
+                  <li><a href="javascript:">Q&A</a></li>
+                  <li><a href="javascript:">매장안내</a></li>
+                  <li><a href="javascript:">RVIP전용</a></li>
+                  <li><a href="javascript:">FAQ</a></li>
+                  <li><a href="javascript:">EVENT</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:">포토리뷰</a>
+              </li>
+            </ul>
+          </div>
+          <div class="user">
+            <a href="javascript:">로그인</a>
+            <a href="javascript:">회원가입</a>
+            <a href="javascript:">장바구니</a>
+            <a href="javascript:">주문조회</a>
+            <a href="javascript:">마이페이지</a>
+            <a href="javascript:">고객센터</a>
+          </div>
+        </div>
+      </section>
+      <!-- .Banner;; -->
+      <div class="ReviewScrollPointer"><i class="xi-scroll"></i></div>
+      <!-- .Header;; -->
+
+      <!-- .Header;; -->
+      <header class="Header">
+        <div class="container">
+          <nav>
+            <h1>
+              <a href="javascript:"><img src="./img/logo_120.png" alt="" /></a>
+            </h1>
+            <ul class="menu">
+              <li class="on">
+                <a href="javascript:">빵과 함께</a>
+                <ul class="smenu">
+                  <li><a href="javascript:"> 젤리 </a></li>
+                  <li><a href="javascript:"> 쥬스 </a></li>
+                  <li><a href="javascript:"> 발사믹 식초 </a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:">빵</a>
+                <ul class="smenu">
+                  <li><a href="javascript:"> 구운과자 </a></li>
+                  <li><a href="javascript:"> 만주 </a></li>
+                  <li><a href="javascript:"> 바게트 </a></li>
+                  <li><a href="javascript:"> 식빵 </a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:">쿠키</a>
+                <ul class="smenu">
+                  <li><a href="javascript:"> 단품 쿠키 </a></li>
+                  <li><a href="javascript:"> 쿠키 선물세트 </a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:">초콜렛</a>
+                <ul class="smenu">
+                  <li><a href="javascript:"> 간식용 </a></li>
+                  <li><a href="javascript:"> 선물용 </a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:">선물세트</a>
+                <ul class="smenu">
+                  <li><a href="javascript:"> 1~2만원대 선물(소) </a></li>
+                  <li><a href="javascript:"> 2~3만원대 선물(중) </a></li>
+                  <li>
+                    <a href="javascript:"> 3만원대 이상 선물(대) </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:">케이크</a>
+                <ul class="smenu">
+                  <li><a href="javascript:"> 시즌 한정 </a></li>
+                  <li><a href="javascript:"> 올시즌 케이크 </a></li>
+                  <li><a href="javascript:"> 데코픽 </a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:">쟈흐당 옵스</a>
+              </li>
+            </ul>
+            <div class="user">
+              <form action="" class="searchForm">
+                <input type="text" />
+                <button>
+                  <i class="xi-search"></i>
+                </button>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <i class="xi-bars menuBtn"></i>
+      <!-- .Header;; -->
+
+      <!-- .main;; -->
+      <main class="main">
+        <!-- .MainVisual;; -->
+        <section class="MainVisual">
+          <div class="mainSlider">
+            <div class="slide slide01">
+              <figure>
+                <div class="inner">
+                  <h2>옵스는 1989년 부산 남천동에서 처음 문을 열었습니다.</h2>
+                  <p>기본에 충실한 경영이념과 노하우를 가지고 고객의 건강한 행복을 위해 정진합니다.</p>
                 </div>
-            </section>
-            <!-- .Banner;; -->
-            <div class="ReviewScrollPointer"><i class="xi-scroll"></i></div>
-            <!-- .Header;; -->
-
-            <!-- .Header;; -->
-            <header class="Header">
-                <div class="container">
-                    <nav>
-                        <h1>
-                            <a href=""
-                                ><img src="./img/logo_120.png" alt=""
-                            /></a>
-                        </h1>
-                        <ul class="menu">
-                            <li class="on">
-                                <a href="">빵과 함께</a>
-                                <ul class="smenu">
-                                    <li><a href=""> 젤리 </a></li>
-                                    <li><a href=""> 쥬스 </a></li>
-                                    <li><a href=""> 발사믹 식초 </a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="">빵</a>
-                                <ul class="smenu">
-                                    <li><a href=""> 구운과자 </a></li>
-                                    <li><a href=""> 만주 </a></li>
-                                    <li><a href=""> 바게트 </a></li>
-                                    <li><a href=""> 식빵 </a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="">쿠키</a>
-                                <ul class="smenu">
-                                    <li><a href=""> 단품 쿠키 </a></li>
-                                    <li><a href=""> 쿠키 선물세트 </a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="">초콜렛</a>
-                                <ul class="smenu">
-                                    <li><a href=""> 간식용 </a></li>
-                                    <li><a href=""> 선물용 </a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="">선물세트</a>
-                                <ul class="smenu">
-                                    <li><a href=""> 1~2만원대 선물(소) </a></li>
-                                    <li><a href=""> 2~3만원대 선물(중) </a></li>
-                                    <li>
-                                        <a href=""> 3만원대 이상 선물(대) </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="">케이크</a>
-                                <ul class="smenu">
-                                    <li><a href=""> 시즌 한정 </a></li>
-                                    <li><a href=""> 올시즌 케이크 </a></li>
-                                    <li><a href=""> 데코픽 </a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="">쟈흐당 옵스</a>
-                            </li>
-                        </ul>
-                        <div class="user">
-                            <form action="" class="searchForm">
-                                <input type="text" />
-                                <button>
-                                    <i class="xi-search"></i>
-                                </button>
-                            </form>
-                        </div>
-                    </nav>
+              </figure>
+            </div>
+            <div class="slide slide02">
+              <figure>
+                <div class="inner">
+                  <h2>가치 있는 제품을 만들기 위해 최선을 다합니다.</h2>
+                  <p>엄선한 재료를 셰프들이 직접 가공하여 제품을 만드는 원칙을 지킵니다.</p>
                 </div>
-            </header>
-            <i class="xi-bars menuBtn"></i>
-            <!-- .Header;; -->
+              </figure>
+            </div>
+          </div>
+          <div class="container"></div>
+        </section>
+        <!-- .MainVisual;; -->
 
-            <!-- .main;; -->
-            <main class="main">
-                <!-- .MainVisual;; -->
-                <section class="MainVisual">
-                    <div class="mainSlider">
-                        <div class="slide slide01">
-                            <figure>
-                                <div class="inner">
-                                    <h2>
-                                        옵스는 1989년 부산 남천동에서 처음 문을
-                                        열었습니다.
-                                    </h2>
-                                    <p>
-                                        기본에 충실한 경영이념과 노하우를 가지고
-                                        고객의 건강한 행복을 위해 정진합니다.
-                                    </p>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="slide slide02">
-                            <figure>
-                                <div class="inner">
-                                    <h2>
-                                        가치 있는 제품을 만들기 위해 최선을
-                                        다합니다.
-                                    </h2>
-                                    <p>
-                                        엄선한 재료를 셰프들이 직접 가공하여
-                                        제품을 만드는 원칙을 지킵니다.
-                                    </p>
-                                </div>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="container"></div>
-                </section>
-                <!-- .MainVisual;; -->
+        <!-- .Cake;; -->
+        <section class="Cake">
+          <div class="container">
+            <div class="leftBox">
+              <div class="des">
+                <strong>Cake</strong>
+                <p>
+                  Cake이란 단어는 언제부터 사용되었을까?
+                  <br />
+                  고대 노르웨이 단어 'Kaka'에서 유래한다.
+                </p>
+                <div class="popularCake">
+                  <p>TOP7</p>
+                  <ul>
+                    <li>
+                      <a href="javascript:"> 후랑보아즈 </a>
+                    </li>
+                    <li>
+                      <a href="javascript:"> 파인치즈 케익 </a>
+                    </li>
+                    <li>
+                      <a href="javascript:"> 초코 쉬폰 케익 </a>
+                    </li>
+                    <li>
+                      <a href="javascript:"> 까망베르 치즈케익 </a>
+                    </li>
+                    <li>
+                      <a href="javascript:"> 프로마쥬 블랑 </a>
+                    </li>
+                    <li>
+                      <a href="javascript:"> 갸또 쇼꼴라 </a>
+                    </li>
+                    <li>
+                      <a href="javascript:"> 티라미수 </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a href="javascript:" class="order">예약 주문하기 </a>
+            </div>
+            <div class="rightBox">
+              <div class="top">
+                <figure>
+                  <a href="javascript:">
+                    <img src="./img/cake/batch_batch_c1.jpg" alt="" />
+                    <strong>바닐라 생크림 케익</strong>
+                    <p class="price">13,000원</p>
+                  </a>
+                </figure>
+                <figure>
+                  <a href="javascript:">
+                    <img src="./img/cake/batch_batch_c2.jpg" alt="" />
+                    <strong>갸또 쇼꼴라</strong>
+                    <p class="price">34,000원</p>
+                  </a>
+                </figure>
+                <figure>
+                  <a href="javascript:">
+                    <img src="./img/cake/batch_batch_c3.jpg" alt="" />
+                    <strong>후랑보아즈</strong>
+                    <p class="price">37,000원</p>
+                  </a>
+                </figure>
+              </div>
+              <div class="bottom">
+                <figure>
+                  <a href="javascript:">
+                    <img src="./img/cake/batch_batch_c4.jpg" alt="" />
+                    <strong>오페라 케익</strong>
+                    <p class="price">32,000원</p>
+                  </a>
+                </figure>
+                <figure>
+                  <a href="javascript:">
+                    <img src="./img/cake/batch_batch_c6.jpg" alt="" />
+                    <strong>말차 쉬폰 케익</strong>
+                    <p class="price">26,000원</p>
+                  </a>
+                </figure>
+                <figure>
+                  <a href="javascript:">
+                    <img src="./img/cake/batch_batch_c7.jpg" alt="" />
+                    <strong>까망베르 치즈케익</strong>
+                    <p class="price">42,000원</p>
+                  </a>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- .Cake;; -->
 
-                <!-- .Cake;; -->
-                <section class="Cake">
-                    <div class="container">
-                        <div class="leftBox">
-                            <div class="des">
-                                <strong>Cake</strong>
-                                <p>
-                                    Cake이란 단어는 언제부터 사용되었을까?
-                                    <br />
-                                    고대 노르웨이 단어 'Kaka'에서 유래한다.
-                                </p>
-                                <div class="popularCake">
-                                    <p>TOP7</p>
-                                    <ul>
-                                        <li>
-                                            <a href=""> 후랑보아즈 </a>
-                                        </li>
-                                        <li>
-                                            <a href=""> 파인치즈 케익 </a>
-                                        </li>
-                                        <li>
-                                            <a href=""> 초코 쉬폰 케익 </a>
-                                        </li>
-                                        <li>
-                                            <a href=""> 까망베르 치즈케익 </a>
-                                        </li>
-                                        <li>
-                                            <a href=""> 프로마쥬 블랑 </a>
-                                        </li>
-                                        <li>
-                                            <a href=""> 갸또 쇼꼴라 </a>
-                                        </li>
-                                        <li>
-                                            <a href=""> 티라미수 </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <a href="" class="order">예약 주문하기 </a>
-                        </div>
-                        <div class="rightBox">
-                            <div class="top">
-                                <figure>
-                                    <a href="">
-                                        <img
-                                            src="./img/cake/batch_batch_c1.jpg"
-                                            alt=""
-                                        />
-                                        <strong>바닐라 생크림 케익</strong>
-                                        <p class="price">13,000원</p>
-                                    </a>
-                                </figure>
-                                <figure>
-                                    <a href="">
-                                        <img
-                                            src="./img/cake/batch_batch_c2.jpg"
-                                            alt=""
-                                        />
-                                        <strong>갸또 쇼꼴라</strong>
-                                        <p class="price">34,000원</p>
-                                    </a>
-                                </figure>
-                                <figure>
-                                    <a href="">
-                                        <img
-                                            src="./img/cake/batch_batch_c3.jpg"
-                                            alt=""
-                                        />
-                                        <strong>후랑보아즈</strong>
-                                        <p class="price">37,000원</p>
-                                    </a>
-                                </figure>
-                            </div>
-                            <div class="bottom">
-                                <figure>
-                                    <a href="">
-                                        <img
-                                            src="./img/cake/batch_batch_c4.jpg"
-                                            alt=""
-                                        />
-                                        <strong>오페라 케익</strong>
-                                        <p class="price">32,000원</p>
-                                    </a>
-                                </figure>
-                                <figure>
-                                    <a href="">
-                                        <img
-                                            src="./img/cake/batch_batch_c6.jpg"
-                                            alt=""
-                                        />
-                                        <strong>말차 쉬폰 케익</strong>
-                                        <p class="price">26,000원</p>
-                                    </a>
-                                </figure>
-                                <figure>
-                                    <a href="">
-                                        <img
-                                            src="./img/cake/batch_batch_c7.jpg"
-                                            alt=""
-                                        />
-                                        <strong>까망베르 치즈케익</strong>
-                                        <p class="price">42,000원</p>
-                                    </a>
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- .Cake;; -->
-
-                <!-- .Present;; -->
-                <section class="Present">
-                    <div class="container">
-                        <div class="content">
-                            <div class="left">
-                                <figure>
-                                    <img
-                                        src="./img/present/batch_batch_copy.jpg"
-                                        alt=""
-                                    />
-                                </figure>
-                            </div>
-                            <div class="right">
-                                <h2>추석선물세트</h2>
-                                <strong
-                                    >"올해는 옵스와 함께 풍성한 한가위를
-                                    준비하세요"</strong
-                                >
-                                <div class="txt">
-                                    <p class="txtNum">
-                                        01. 메세지카드 무료제작
-                                    </p>
-                                    <p>
-                                        직접 적은 메세지 카드를 함께 동봉해
-                                        드립니다.
-                                    </p>
-                                    <p>전하지 못했던 고마움을 전하세요.</p>
-                                    <p class="txtNum">02. 대량 주문 혜택</p>
-                                    <p>
-                                        많은 분들께 감사를 전하고 싶은 분들에게
-                                    </p>
-                                    <p>50만원 이상 주문시에는 5% 할인.</p>
-                                    <p class="txtNum">03. 보자기 선물포장</p>
-                                    <p>
-                                        한가위 선물은 우리 느낌의 보자기로
-                                        포장하여 <br />
-                                        받는 사람의 마음을 따뜻하게 해주세요.
-                                    </p>
-                                    <!-- <p class="txtNum">04. 핑크퐁 상어가족</p>
+        <!-- .Present;; -->
+        <section class="Present">
+          <div class="container">
+            <div class="content">
+              <div class="left">
+                <figure>
+                  <img src="./img/present/batch_batch_copy.jpg" alt="" />
+                </figure>
+              </div>
+              <div class="right">
+                <h2>추석선물세트</h2>
+                <strong>"올해는 옵스와 함께 풍성한 한가위를 준비하세요"</strong>
+                <div class="txt">
+                  <p class="txtNum">01. 메세지카드 무료제작</p>
+                  <p>직접 적은 메세지 카드를 함께 동봉해 드립니다.</p>
+                  <p>전하지 못했던 고마움을 전하세요.</p>
+                  <p class="txtNum">02. 대량 주문 혜택</p>
+                  <p>많은 분들께 감사를 전하고 싶은 분들에게</p>
+                  <p>50만원 이상 주문시에는 5% 할인.</p>
+                  <p class="txtNum">03. 보자기 선물포장</p>
+                  <p>
+                    한가위 선물은 우리 느낌의 보자기로 포장하여 <br />
+                    받는 사람의 마음을 따뜻하게 해주세요.
+                  </p>
+                  <!-- <p class="txtNum">04. 핑크퐁 상어가족</p>
                   <p>
                     아기상어 뚜루루뚜루 귀여운 뚜루루뚜루 <br />
                     바닷속 뚜루루뚜루 아기상어.
                   </p> -->
-                                </div>
-                                <a href="" class="order">선물하러 가기</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- .Present;; -->
-
-                <!-- .jar;; -->
-                <section class="jar">
-                    <div class="container">
-                        <h2>
-                            <a href="">
-                                <img src="./img/jar/jar-logo.png" alt="" />
-                            </a>
-                        </h2>
-                        <strong
-                            >쟈흐당 옵스. 안전한 농작물, 영양가 있는
-                            농작물.</strong
-                        >
-                        <div class="jarSlider">
-                            <figure>
-                                <img
-                                    src="./img/jar/6d8dfc9c0fcf709c06c7a9d5a89361de.jpg"
-                                    alt=""
-                                />
-                                <a href="">
-                                    <p>
-                                        신선한 쥬스 "쥬드뽐"과 디저트를 함께
-                                        즐겨보세요.
-                                    </p>
-                                    <i class="xi-arrow-right"></i
-                                ></a>
-                            </figure>
-                            <figure>
-                                <img
-                                    src="./img/jar/5586aac1a93901bc526388584778fa4c.jpg"
-                                    alt=""
-                                />
-                                <a href="">
-                                    <p>
-                                        풍요의 여신이 내린 선물과 같은
-                                        쟈흐당옵스 사과 "라뽐"
-                                    </p>
-                                    <i class="xi-arrow-right"></i
-                                ></a>
-                            </figure>
-                            <figure>
-                                <img
-                                    src="./img/jar/fa0b89a5db77469575a259a78ab86242.jpg"
-                                    alt=""
-                                />
-                                <a href="">
-                                    <p>
-                                        자연 그대로의 맛을 정성스럽게 담아낸
-                                        쟈흐당옵스
-                                    </p>
-                                    <i class="xi-arrow-right"></i
-                                ></a>
-                            </figure>
-                            <figure>
-                                <img
-                                    src="./img/jar/a91dacb65cbdf56e8cf5e2206e9fa22f.jpg"
-                                    alt=""
-                                />
-                                <a href="">
-                                    <p>쟈흐당 옵스 청송사과 "라뽐"</p>
-                                    <i class="xi-arrow-right"></i
-                                ></a>
-                            </figure>
-                        </div>
-                    </div>
-                </section>
-                <!-- .jar;; -->
-
-                <!--.Review;;-->
-                <section class="Review">
-                    <div class="container">
-                        <div class="left">
-                            <h2>리뷰를 확인해보세요!</h2>
-                            <p>무엇을 사야할지 고르기 어려우신가요?</p>
-                            <p>
-                                다른 고객님들이 남겨주신 소중한 후기들을
-                                확인해보세요.
-                            </p>
-                            <p>신뢰할 수 있는 제품 리뷰로 만족도 업!</p>
-                            <div class="mostReview">
-                                <strong
-                                    >최근 리뷰가 가장 많은 제품 TOP 3</strong
-                                >
-                                <div class="mostPhoto">
-                                    <a href="" class="photo photo01">
-                                        <p>학원전 박스세트(10EA)</p>
-                                        <p class="price">18,000원</p>
-                                    </a>
-                                    <a href="" class="photo photo02">
-                                        <p>쥬드뽐(10EA)</p>
-                                        <p class="price">12,000원</p>
-                                    </a>
-                                    <a href="" class="photo photo03">
-                                        <p>쿠키세트 2호</p>
-                                        <p class="price">15,000원</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <a href=""
-                                >더 많은 인기 제품 찾아보기
-                                <i class="xi-angle-right-min"></i
-                            ></a>
-                        </div>
-                        <div class="right">
-                            <div class="lBox">
-                                <div class="reviewBox reviewBox04">
-                                    <figure></figure>
-                                    <strong>몽구떼 하세용</strong>
-                                    <p>
-                                        드디어 맛보게된 옵스의 구운과자들
-                                        몽구떼는 특히나 맛있어요.
-                                    </p>
-                                </div>
-                                <div class="reviewBox reviewBox03">
-                                    <figure></figure>
-                                    <strong>몽구떼 하세용</strong>
-                                    <p>
-                                        드디어 맛보게된 옵스의 구운과자들
-                                        몽구떼는 특히나 맛있어요.
-                                    </p>
-                                </div>
-                                <div class="reviewBox reviewBox02">
-                                    <figure></figure>
-                                    <strong>몽구떼 하세용</strong>
-                                    <p>
-                                        드디어 맛보게된 옵스의 구운과자들
-                                        몽구떼는 특히나 맛있어요.
-                                    </p>
-                                </div>
-                                <div class="reviewBox reviewBox01">
-                                    <figure></figure>
-                                    <strong>몽구떼 하세용</strong>
-                                    <p>
-                                        드디어 맛보게된 옵스의 구운과자들
-                                        몽구떼는 특히나 맛있어요.
-                                    </p>
-                                </div>
-                                <div class="reviewBox reviewBox04">
-                                    <figure></figure>
-                                    <strong>몽구떼 하세용</strong>
-                                    <p>
-                                        드디어 맛보게된 옵스의 구운과자들
-                                        몽구떼는 특히나 맛있어요.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="rBox">
-                                <div class="reviewBox reviewBox02">
-                                    <figure></figure>
-                                    <strong>몽구떼 하세용</strong>
-                                    <p>
-                                        드디어 맛보게된 옵스의 구운과자들
-                                        몽구떼는 특히나 맛있어요.
-                                    </p>
-                                </div>
-                                <div class="reviewBox reviewBox01">
-                                    <figure></figure>
-                                    <strong>몽구떼 하세용</strong>
-                                    <p>
-                                        드디어 맛보게된 옵스의 구운과자들
-                                        몽구떼는 특히나 맛있어요.
-                                    </p>
-                                </div>
-                                <div class="reviewBox reviewBox02">
-                                    <figure></figure>
-                                    <strong>몽구떼 하세용</strong>
-                                    <p>
-                                        드디어 맛보게된 옵스의 구운과자들
-                                        몽구떼는 특히나 맛있어요.
-                                    </p>
-                                </div>
-                                <div class="reviewBox reviewBox01">
-                                    <figure></figure>
-                                    <strong>몽구떼 하세용</strong>
-                                    <p>
-                                        드디어 맛보게된 옵스의 구운과자들
-                                        몽구떼는 특히나 맛있어요.
-                                    </p>
-                                </div>
-                                <div class="reviewBox reviewBox02">
-                                    <figure></figure>
-                                    <strong>몽구떼 하세용</strong>
-                                    <p>
-                                        드디어 맛보게된 옵스의 구운과자들
-                                        몽구떼는 특히나 맛있어요.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!--.Review;;-->
-            </main>
-            <!-- .main;; -->
-
-            <!-- .Footer;; -->
-            <footer class="Footer">
-                <div class="container">
-                    <div class="left">
-                        <div class="service">
-                            <h3>CS CENTER</h3>
-                            <a href="tel:1588-3069">1588-3069</a>
-                            <ul>
-                                <li>
-                                    <p><span>영업시간</span> 09:30 ~ 06:00</p>
-                                </li>
-                                <li>
-                                    <p><span>점심시간</span> 12:00 ~ 13:00</p>
-                                </li>
-                                <li>
-                                    <p><span>휴무일</span> 주말 / 공휴일</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <div class="service bank">
-                            <h3>BANKING ACCOUNT</h3>
-                            <ul>
-                                <li>
-                                    <p>국민 : 768701-01-365535</p>
-                                </li>
-                                <li>
-                                    <p>부산 : 101-2015-6045-02</p>
-                                </li>
-                                <li>
-                                    <p>농협 : 317-0013-4468-91</p>
-                                </li>
-                                <li>
-                                    <p>기업 : 288-089664-04-031</p>
-                                </li>
-                            </ul>
-                            <strong>
-                                예금주 : <span>(주)옵스 (김상용)</span></strong
-                            >
-                        </div>
-                        <div class="service return">
-                            <h3>RETURN ADDRESS</h3>
-                            <p>
-                                <span> 부산 남구 신선로 201, B4 포장실 </span>
-                            </p>
-                            <p class="deli">CJ대한통운 (1588-1255)</p>
-                            <p class="deliWarn">
-                                <span> 상품의 특성상 반품은 불가합니다. </span>
-                            </p>
-                            <p class="deliExcep">
-                                단, 제품의 하자나 당사의 착오가 있을 시 상품을
-                                받은 날부터 2일 이내에 옵스 고객센터 <br />
-                                <span>1588-3069</span> 로 전화주시면 교환/반품
-                                가능합니다. <br />
-                                ※상품에 문제가 있는 것으로 확인되면 배송비는
-                                옵스가 부담합니다.
-                            </p>
-                        </div>
-                        <div class="service info">
-                            <h3>ABOUT US</h3>
-                            <ul>
-                                <li>
-                                    <a href="">OUR COMPANY </a>
-                                </li>
-                                <li>
-                                    <a href=""> AGREEMENT</a>
-                                </li>
-                                <li>
-                                    <a href="">PRIVACY POLICY</a>
-                                </li>
-                                <li>
-                                    <a href=""> SHOP GUIDE</a>
-                                </li>
-                                <li>
-                                    <a href=""> CS CENTER</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
-                <div class="bottom">
-                    <div class="container">
-                        <h3>COMPANY INFO</h3>
-                        <p>
-                            (주)옵스 CEO. 김상용 CPO. 송나영 [ MALL@OPS.CO.KR ]
-                            <br />
-                            <a href="tel:1588-3069">Tel. 1588-3069</a> <br />
-                            ADDRESS. 부산광역시 남구 신선로 201 (감만동) 1동
-                            BUSINESS LICENSE. 617-81-25278 ONLINE LICENSE. 제
-                            2014-부산남구-6 호
-                        </p>
+                <a href="javascript:" class="order">선물하러 가기</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- .Present;; -->
 
-                        <span
-                            >COPYRIGHT © 2019 'OPS 옵스' ALL RIGHTS
-                            RESERVED</span
-                        >
-                    </div>
+        <!-- .jar;; -->
+        <section class="jar">
+          <div class="container">
+            <h2>
+              <a href="javascript:">
+                <img src="./img/jar/jar-logo.png" alt="" />
+              </a>
+            </h2>
+            <strong>쟈흐당 옵스. 안전한 농작물, 영양가 있는 농작물.</strong>
+            <div class="jarSlider">
+              <figure>
+                <img src="./img/jar/6d8dfc9c0fcf709c06c7a9d5a89361de.jpg" alt="" />
+                <a href="javascript:">
+                  <p>신선한 쥬스 "쥬드뽐"과 디저트를 함께 즐겨보세요.</p>
+                  <i class="xi-arrow-right"></i
+                ></a>
+              </figure>
+              <figure>
+                <img src="./img/jar/5586aac1a93901bc526388584778fa4c.jpg" alt="" />
+                <a href="javascript:">
+                  <p>풍요의 여신이 내린 선물과 같은 쟈흐당옵스 사과 "라뽐"</p>
+                  <i class="xi-arrow-right"></i
+                ></a>
+              </figure>
+              <figure>
+                <img src="./img/jar/fa0b89a5db77469575a259a78ab86242.jpg" alt="" />
+                <a href="javascript:">
+                  <p>자연 그대로의 맛을 정성스럽게 담아낸 쟈흐당옵스</p>
+                  <i class="xi-arrow-right"></i
+                ></a>
+              </figure>
+              <figure>
+                <img src="./img/jar/a91dacb65cbdf56e8cf5e2206e9fa22f.jpg" alt="" />
+                <a href="javascript:">
+                  <p>쟈흐당 옵스 청송사과 "라뽐"</p>
+                  <i class="xi-arrow-right"></i
+                ></a>
+              </figure>
+            </div>
+          </div>
+        </section>
+        <!-- .jar;; -->
+
+        <!--.Review;;-->
+        <section class="Review">
+          <div class="container">
+            <div class="left">
+              <h2>리뷰를 확인해보세요!</h2>
+              <p>무엇을 사야할지 고르기 어려우신가요?</p>
+              <p>다른 고객님들이 남겨주신 소중한 후기들을 확인해보세요.</p>
+              <p>신뢰할 수 있는 제품 리뷰로 만족도 업!</p>
+              <div class="mostReview">
+                <strong>최근 리뷰가 가장 많은 제품 TOP 3</strong>
+                <div class="mostPhoto">
+                  <a href="javascript:" class="photo photo01">
+                    <p>학원전 박스세트(10EA)</p>
+                    <p class="price">18,000원</p>
+                  </a>
+                  <a href="javascript:" class="photo photo02">
+                    <p>쥬드뽐(10EA)</p>
+                    <p class="price">12,000원</p>
+                  </a>
+                  <a href="javascript:" class="photo photo03">
+                    <p>쿠키세트 2호</p>
+                    <p class="price">15,000원</p>
+                  </a>
                 </div>
-            </footer>
-            <!-- .Footer;; -->
+              </div>
+              <a href="javascript:">더 많은 인기 제품 찾아보기 <i class="xi-angle-right-min"></i></a>
+            </div>
+            <div class="right">
+              <div class="lBox">
+                <div class="reviewBox reviewBox04">
+                  <figure></figure>
+                  <strong>몽구떼 하세용</strong>
+                  <p>드디어 맛보게된 옵스의 구운과자들 몽구떼는 특히나 맛있어요.</p>
+                </div>
+                <div class="reviewBox reviewBox03">
+                  <figure></figure>
+                  <strong>몽구떼 하세용</strong>
+                  <p>드디어 맛보게된 옵스의 구운과자들 몽구떼는 특히나 맛있어요.</p>
+                </div>
+                <div class="reviewBox reviewBox02">
+                  <figure></figure>
+                  <strong>몽구떼 하세용</strong>
+                  <p>드디어 맛보게된 옵스의 구운과자들 몽구떼는 특히나 맛있어요.</p>
+                </div>
+                <div class="reviewBox reviewBox01">
+                  <figure></figure>
+                  <strong>몽구떼 하세용</strong>
+                  <p>드디어 맛보게된 옵스의 구운과자들 몽구떼는 특히나 맛있어요.</p>
+                </div>
+                <div class="reviewBox reviewBox04">
+                  <figure></figure>
+                  <strong>몽구떼 하세용</strong>
+                  <p>드디어 맛보게된 옵스의 구운과자들 몽구떼는 특히나 맛있어요.</p>
+                </div>
+              </div>
+              <div class="rBox">
+                <div class="reviewBox reviewBox02">
+                  <figure></figure>
+                  <strong>몽구떼 하세용</strong>
+                  <p>드디어 맛보게된 옵스의 구운과자들 몽구떼는 특히나 맛있어요.</p>
+                </div>
+                <div class="reviewBox reviewBox01">
+                  <figure></figure>
+                  <strong>몽구떼 하세용</strong>
+                  <p>드디어 맛보게된 옵스의 구운과자들 몽구떼는 특히나 맛있어요.</p>
+                </div>
+                <div class="reviewBox reviewBox02">
+                  <figure></figure>
+                  <strong>몽구떼 하세용</strong>
+                  <p>드디어 맛보게된 옵스의 구운과자들 몽구떼는 특히나 맛있어요.</p>
+                </div>
+                <div class="reviewBox reviewBox01">
+                  <figure></figure>
+                  <strong>몽구떼 하세용</strong>
+                  <p>드디어 맛보게된 옵스의 구운과자들 몽구떼는 특히나 맛있어요.</p>
+                </div>
+                <div class="reviewBox reviewBox02">
+                  <figure></figure>
+                  <strong>몽구떼 하세용</strong>
+                  <p>드디어 맛보게된 옵스의 구운과자들 몽구떼는 특히나 맛있어요.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--.Review;;-->
+      </main>
+      <!-- .main;; -->
+
+      <!-- .Footer;; -->
+      <footer class="Footer">
+        <div class="container">
+          <div class="left">
+            <div class="service">
+              <h3>CS CENTER</h3>
+              <a href="tel:1588-3069">1588-3069</a>
+              <ul>
+                <li>
+                  <p><span>영업시간</span> 09:30 ~ 06:00</p>
+                </li>
+                <li>
+                  <p><span>점심시간</span> 12:00 ~ 13:00</p>
+                </li>
+                <li>
+                  <p><span>휴무일</span> 주말 / 공휴일</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="right">
+            <div class="service bank">
+              <h3>BANKING ACCOUNT</h3>
+              <ul>
+                <li>
+                  <p>국민 : 768701-01-365535</p>
+                </li>
+                <li>
+                  <p>부산 : 101-2015-6045-02</p>
+                </li>
+                <li>
+                  <p>농협 : 317-0013-4468-91</p>
+                </li>
+                <li>
+                  <p>기업 : 288-089664-04-031</p>
+                </li>
+              </ul>
+              <strong> 예금주 : <span>(주)옵스 (김상용)</span></strong>
+            </div>
+            <div class="service return">
+              <h3>RETURN ADDRESS</h3>
+              <p>
+                <span> 부산 남구 신선로 201, B4 포장실 </span>
+              </p>
+              <p class="deli">CJ대한통운 (1588-1255)</p>
+              <p class="deliWarn">
+                <span> 상품의 특성상 반품은 불가합니다. </span>
+              </p>
+              <p class="deliExcep">
+                단, 제품의 하자나 당사의 착오가 있을 시 상품을 받은 날부터 2일 이내에 옵스 고객센터
+                <br />
+                <span>1588-3069</span> 로 전화주시면 교환/반품 가능합니다. <br />
+                ※상품에 문제가 있는 것으로 확인되면 배송비는 옵스가 부담합니다.
+              </p>
+            </div>
+            <div class="service info">
+              <h3>ABOUT US</h3>
+              <ul>
+                <li>
+                  <a href="javascript:">OUR COMPANY </a>
+                </li>
+                <li>
+                  <a href="javascript:"> AGREEMENT</a>
+                </li>
+                <li>
+                  <a href="javascript:">PRIVACY POLICY</a>
+                </li>
+                <li>
+                  <a href="javascript:"> SHOP GUIDE</a>
+                </li>
+                <li>
+                  <a href="javascript:"> CS CENTER</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </body>
+        <div class="bottom">
+          <div class="container">
+            <h3>COMPANY INFO</h3>
+            <p>
+              (주)옵스 CEO. 김상용 CPO. 송나영 [ MALL@OPS.CO.KR ]
+              <br />
+              <a href="tel:1588-3069">Tel. 1588-3069</a> <br />
+              ADDRESS. 부산광역시 남구 신선로 201 (감만동) 1동 BUSINESS LICENSE. 617-81-25278 ONLINE
+              LICENSE. 제 2014-부산남구-6 호
+            </p>
+
+            <span>COPYRIGHT © 2019 'OPS 옵스' ALL RIGHTS RESERVED</span>
+          </div>
+        </div>
+      </footer>
+      <!-- .Footer;; -->
+    </div>
+  </body>
 </html>
